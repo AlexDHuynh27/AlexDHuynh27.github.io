@@ -1,9 +1,9 @@
 :root {
-	--cream: #F5EDE3;
-	--dark-sand: #2B2622;
-	--driftwood: #6B5F56;
-	--gold: #D9A066;
-	--peach: #E6CDB5;
+	--cream: #F5EDE3; /*Background*/
+	--dark-sand: #2B2622; /*Headers*/
+	--driftwood: #6B5F56; /*Text*/
+	--gold: #D9A066; /*Clickables*/
+	--peach: #E6CDB5; /*Inner Backgrounds*/
 }
 
 body {
@@ -49,11 +49,13 @@ a {
 }
 
 .card-holder {
-	background-color: black;
-	padding: 10px
+	background-color: #EADFD2;
+	max-width: 1700px;
+	padding:1.5rem;
+	width: 90%;
 }
 
 .card {
 	background-color: var(--peach);
-	margin: 5px
+	margin: 5px;
 }
