@@ -1,18 +1,18 @@
 :root {
-	--cream: #F5EDE3; /*Background*/
-	--dark-sand: #2B2622; /*Headers*/
-	--driftwood: #6B5F56; /*Text*/
-	--gold: #D9A066; /*Clickables*/
-	--peach: #E6CDB5; /*Inner Backgrounds*/
+	--back-color: #F5EDE3; /*Background*/
+	--head-color: #2B2622; /*Headers*/
+	--maintext-color: #6B5F56; /*Text*/
+	--clickable-color: #D9A066; /*Clickables*/
+	--inner-back-color: #E6CDB5; /*Inner Backgrounds*/
 }
 
 body {
-	background-color: var(--cream);
-	color: var(--dark-sand);
+	background-color: var(--back-color);
+	color: var(--head-color);
 }
 
 a {
-	color: var(--gold);
+	color: var(--clickable-color);
 }
 
 .text-muted {
@@ -37,12 +37,12 @@ a {
 }
 
 .header-banner h1 {
-	color: var(--cream);
+	color: var(--back-color);
 	text-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
 }
 
 .header-banner p {
-	color: var(--peach);
+	color: var(--inner-back-color);
   	font-size: 1.1rem;
  	letter-spacing: 0.2em;
   	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -56,6 +56,15 @@ a {
 }
 
 .card {
-	background-color: var(--peach);
+	background-color: var(--inner-back-color);
 	margin: 5px;
+}
+.card h5 {
+	color:var(--head-color);
+}
+.card h4 {
+	color:var(--head-color);
+}
+.card p {
+	color:var(--maintext-color);
 }
