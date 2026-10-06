@@ -1,0 +1,59 @@
+:root {
+	--cream: #F5EDE3;
+	--dark-sand: #2B2622;
+	--driftwood: #6B5F56;
+	--gold: #D9A066;
+	--peach: #E6CDB5;
+}
+
+body {
+	background-color: var(--cream);
+	color: var(--dark-sand);
+}
+
+a {
+	color: var(--gold);
+}
+
+.text-muted {
+	color: #6B5F56;
+}
+
+.header-banner {
+	background: url('../images/header.jpg') center / cover no-repeat;
+	min-height: 60vh;
+	position: relative;
+}
+
+.header-banner::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(43, 38, 34, 0.45);
+}
+
+.header-banner>* {
+	position: relative;
+}
+
+.header-banner h1 {
+	color: var(--cream);
+	text-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
+}
+
+.header-banner p {
+	color: var(--peach);
+  	font-size: 1.1rem;
+ 	letter-spacing: 0.2em;
+  	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card-holder {
+	background-color: black;
+	padding: 10px
+}
+
+.card {
+	background-color: var(--peach);
+	margin: 5px
+}
