@@ -4,7 +4,7 @@ var viewWidth = 0;
 var viewHeight = 0;
 var shipSize = 22;
 var shipSpeed = 320;
-var shipColor = "#212529";
+var shipColor = "#2B2622";
 var shipX = window.innerWidth / 2;
 var shipY = window.innerHeight / 2;
 var shipAngle = 0;
@@ -365,4 +365,5 @@ function draw(time) {
 alert("Use WASD to move. Hold left click to fire a laser and remove the blocks to reveal the photos")
 //loop
 resizeCanvas();
+
 requestAnimationFrame(draw);

@@ -33,7 +33,7 @@ a {
 }
 
 .header-banner {
-	background: url('../images/header.JPG') center / cover no-repeat;
+	background: url('../media/homepage/header.JPG') center / cover no-repeat;
 	min-height: 60vh;
 	position: relative;
 }
