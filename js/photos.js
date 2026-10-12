@@ -361,6 +361,8 @@ function draw(time) {
   requestAnimationFrame(draw);
 }
 
+
+alert("Use WASD to move. Hold left click to fire a laser and remove the blocks to reveal the photos")
 //loop
 resizeCanvas();
 requestAnimationFrame(draw);

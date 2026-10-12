@@ -1,6 +1,4 @@
-/* Bootstrap turns on smooth scrolling; the game scrolls a few pixels every
-   frame, so smooth scrolling would make it lag. Same specificity as
-   Bootstrap's rule and loaded after it, so this wins. */
+
 :root {
     --back-color: #F5EDE3; /*Background*/
 	--head-color: #2B2622; /*Headers*/
@@ -14,10 +12,22 @@
 body {
   user-select: none;
   -webkit-user-select: none;
+  background-color: var(--back-color);
+}
+
+.mynav {
+	background-color: var(--head-color);
+}
+
+.mynav .navbar-brand {
+	color: var(--back-color);
+	font-weight: 700;
+}
+
+.mynav .nav-link {
+	color: var(--inner-back-color);
 }
  
-/* Full-viewport drawing layer for the ship and laser.
-   pointer-events: none lets clicks pass through to the page (navbar links still work). */
 #gameCanvas {
   position: fixed;
   inset: 0;
@@ -42,7 +52,6 @@ body {
   -webkit-user-drag: none;
 }
  
-/* The grid of colored blocks laid over each photo (columns/rows set in JS) */
 .photoFrame .cover {
   position: absolute;
   inset: 0;
