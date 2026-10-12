@@ -7,20 +7,184 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- index.css defines the shared color variables; interests.css adds page-specific styles -->
     <link href="styles/index.css" rel="stylesheet">
-    <title>Alex Huynh Homepage</title>
+    <link href="styles/interests.css" rel="stylesheet">
+    <title>Alex Huynh | Interests</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-        <a href="#" class="logo">Logo</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#l-and-e">Leadership & Experience</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="mynav navbar navbar-expand-lg">
+        <a class="navbar-brand mx-5" href="index.html">Alex Huynh</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="index.html#projects">Projects</a>
+                <a class="nav-item nav-link" href="index.html#l-and-e">Leadership & Experience</a>
+                <a class="nav-item nav-link active" href="interests.html">Interests</a>
+                <a class="nav-item nav-link" href="photos.html">Photos</a>
+            </div>
+        </div>
     </nav>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- /Navbar -->
+
+    <!-- Banner -->
+    <!-- TODO: add your banner photo at media/interests/banner.jpg (or change --banner-image in styles/interests.css) -->
+    <div class="container-fluid interests-banner text-center d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-3 fw-bold">Interests</h1>
+        <p class="lead">What I make, read, and play</p>
+    </div>
+
+    <!-- Intro -->
+    <div class="container holder my-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-9 text-center">
+                <p class="intro-text">
+                    Outside of code, I like to build things, tell stories, and compete. Designing board games,
+                    writing fiction, and climbing the ranks in Deadlock all feed how I work as an engineer:
+                    creating systems with clear rules, iterating on feedback, and paying attention to detail.
+                </p>
+                <!-- Quick-jump row -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                    <a class="btn btn-primary" href="#game-creation" role="button">Game Creation</a>
+                    <a class="btn btn-primary" href="#deadlock" role="button">Deadlock</a>
+                    <a class="btn btn-primary" href="#reading" role="button">Reading</a>
+                    <a class="btn btn-primary" href="#writing" role="button">Writing</a>
+                    <a class="btn btn-primary" href="#photography" role="button">Photography</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Creation -->
+    <div class="container card-holder my-5">
+        <div class="row g-4">
+            <h2 id="game-creation" class="text-center">Game Creation</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-10 text-center">
+                <p class="section-blurb">
+                    I design physical board games. Making one means building a rule system from scratch,
+                    playtesting it, and refining it until it holds together.
+                </p>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-10">
+                <div class="card game-card">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <!-- TODO: replace this placeholder with a photo of Tile Siege, e.g.
+                                 <img class="img-fluid game-photo" src="media/interests/tile-siege.jpg" alt="Tile Siege game in play"> -->
+                            <img class="img-fluid game-photo" src="media/interests/image.webp" alt="Tile Siege pieces">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h3 class="card-title">Tile Siege</h3>
+                                <p class="card-subtitle mb-3">Tile-building tactical card combat game</p>
+                                <p class="card-text">
+                                    Players first build the map by drafting tiles, then fight across it in
+                                    combat with three knights each. The game pairs a drafting phase with
+                                    tactical card play, so the board you build shapes the battle that follows.
+                                </p>
+                                <!-- TODO: put your rules PDF at media/interests/tile-siege-rules.pdf (or update this path) -->
+                                <a class="btn btn-primary" href="media/interests/Tile-Siege-Game-Manual.pdf" target="_blank" rel="noopener">View Rulebook (PDF)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deadlock -->
+    <div class="container holder my-5">
+        <div class="row g-4">
+            <h2 id="deadlock" class="text-center">Deadlock</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Competitive Achievements</h4>
+                        <p class="card-text">Top 100 on Yamato and Abrams before July 30th.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reading -->
+    <div class="container card-holder my-5">
+        <div class="row g-4">
+            <h2 id="reading" class="text-center">Reading</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="badge shelf-badge mb-2">Currently Reading</span>
+                        <h4 class="card-title">The Way of Kings</h4>
+                        <p class="card-text">by Brandon Sanderson</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="badge shelf-badge mb-2">Favorites</span>
+                        <ul class="favorites-list">
+                            <li><strong>Red Rising</strong> <span>Pierce Brown</span></li>
+                            <li><strong>Shadow Slave</strong> <span>Guiltythree</span></li>
+                            <li><strong>Giovanni's Room</strong> <span>James Baldwin</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Writing -->
+    <div class="container holder my-5">
+        <div class="row g-4">
+            <h2 id="writing" class="text-center">Writing</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="section-blurb">
+                    I write fiction. It keeps me practiced at structuring ideas and communicating them clearly.
+                </p>
+                <!-- TODO: create writing.html for your excerpts (or update this link) -->
+                <a class="btn btn-primary" href="writing.html" role="button">Read My Writing Excerpts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photography -->
+    <div class="container card-holder my-5">
+        <div class="row g-4">
+            <h2 id="photography" class="text-center">Photography</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="section-blurb">
+                    Photography trains my eye for composition and detail.
+                </p>
+                <a class="btn btn-primary" href="photos.html" role="button">View My Photography</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Closing buttons -->
+    <div class="container justify-content-center align-items-center d-flex gap-3 flex-wrap my-5">
+        <a class="btn btn-primary" href="index.html" role="button">Back to Home</a>
+        <a class="btn btn-primary" href="index.html#projects" role="button">View Projects</a>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/hobbies.js"></script>
 </body>
 </html>

@@ -85,3 +85,16 @@ a {
 .card p {
 	color:var(--maintext-color);
 }
+
+.btn-primary {
+	background-color: var(--clickable-color);
+	border-color: var(--clickable-color);
+	color: var(--badge-text-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: var(--inner-back-color);
+	border-color: var(--clickable-color);
+	color: var(--head-color);
+}

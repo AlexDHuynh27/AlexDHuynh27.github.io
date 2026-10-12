@@ -1,0 +1,130 @@
+/* Page-specific styles for interests.html.
+   Shared colors (--back-color, --head-color, --maintext-color,
+   --clickable-color, --inner-back-color) are defined in index.css.
+   Colors that were hard-coded are given variables here so they can be changed later. */
+
+:root {
+	--holder-color: #EADFD2;               /* Alternate section background */
+	--banner-image: url('../media/interests/header.JPG'); /* TODO: add your banner photo */
+	--banner-overlay: rgba(43, 38, 34, 0.45);
+	--placeholder-color: #D6BC9F;          /* Empty photo placeholder */
+	--badge-text-color: #2B2622;           /* Text on badges and buttons */
+}
+
+/* Banner */
+.interests-banner {
+	background-color: var(--head-color);   /* Fallback while there is no photo */
+	background-image: var(--banner-image);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 40vh;
+	position: relative;
+}
+
+.interests-banner::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: var(--banner-overlay);
+}
+
+.interests-banner > * {
+	position: relative;
+}
+
+.interests-banner h1 {
+	color: var(--back-color);
+	text-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
+}
+
+.interests-banner p {
+	color: var(--inner-back-color);
+	font-size: 1.1rem;
+	letter-spacing: 0.2em;
+	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Section text */
+.holder h2,
+.card-holder h2 {
+	color: var(--head-color);
+}
+
+.intro-text,
+.section-blurb {
+	color: var(--maintext-color);
+	font-size: 1.1rem;
+}
+
+/* Alternate section background uses a variable instead of a hard-coded color */
+.card-holder {
+	background-color: var(--holder-color);
+}
+
+/* Buttons: keep the clickable color for all buttons on this page */
+.btn-primary {
+	background-color: var(--clickable-color);
+	border-color: var(--clickable-color);
+	color: var(--badge-text-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: var(--inner-back-color);
+	border-color: var(--clickable-color);
+	color: var(--head-color);
+}
+
+/* Game card */
+.game-card {
+	overflow: hidden;
+}
+
+.game-card .card-subtitle {
+	color: var(--maintext-color);
+	font-style: italic;
+}
+
+.game-card h3 {
+	color: var(--head-color);
+}
+
+.game-photo {
+	width: 100%;
+	height: 100%;
+	min-height: 240px;
+	object-fit: cover;
+}
+
+.photo-placeholder {
+	background-color: var(--placeholder-color);
+	color: var(--maintext-color);
+	text-align: center;
+	padding: 1rem;
+}
+
+/* Reading */
+.shelf-badge {
+	background-color: var(--clickable-color);
+	color: var(--badge-text-color);
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+.favorites-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.favorites-list li {
+	color: var(--head-color);
+	margin-bottom: 0.5rem;
+}
+
+.favorites-list li span {
+	color: var(--maintext-color);
+	display: block;
+	font-size: 0.9rem;
+}
