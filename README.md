@@ -44,7 +44,7 @@ Created for [CS5610](https://northeastern.instructure.com/courses/261032)
  
 ## Video Demonstration
  
-[Watch the demo](https://youtu.be/BhCm-UEepy4)
+[Watch the demo/presentation](https://youtu.be/qBsRBE27dNU)
 
 ## AI Usage
 Antropics Opus 5.5 Model was used to generate the interests page.
