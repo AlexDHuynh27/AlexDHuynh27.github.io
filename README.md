@@ -34,6 +34,9 @@ Or visit [AlexDHuynh27.github.io](https://AlexDHuynh27.github.io)
 ## Author
  
 [Alex Huynh](https://AlexDHuynh27.github.io)
+
+## Design Doc
+View the design doc within media/design-doc
  
 ## Class
  
